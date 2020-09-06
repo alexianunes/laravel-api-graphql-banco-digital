@@ -28,7 +28,7 @@ class ContaType extends GraphQLType
                 'description' => 'Agência responsável pela Conta Bancaria',
             ],
             'conta' => [
-                'type' => Type::nonNull(Type::string()),
+                'type' => Type::nonNull(Type::int()),
                 'description' => 'Conta da Conta Bancaria',
             ],
             'saldo' => [

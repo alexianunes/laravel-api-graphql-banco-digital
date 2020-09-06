@@ -16,7 +16,7 @@ class ContasSeeder extends Seeder
         	[
         		'usuario_id' => '1',
                 'agencia' => '0001',
-                'conta' => '54321',
+                'conta' => 54321,
                 'saldo' => 160
         	],
 
