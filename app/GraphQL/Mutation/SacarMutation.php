@@ -7,6 +7,7 @@ use Rebing\GraphQL\Support\Facades\GraphQL;
 use Rebing\GraphQL\Support\Mutation;
 
 use App\Conta;
+use App\GraphQL\Error\SaqueException;
 
 class SacarMutation extends Mutation {
     protected $attributes = [
@@ -51,13 +52,19 @@ class SacarMutation extends Mutation {
                     return $conta;
         
                 }else{
-                    return 'saldo insuficiente';
+                    throw new SaqueException(
+                        'Saldo insuficiente'
+                    );
                 }
             }else{
-                return 'conta inexistente';
+                throw new SaqueException(
+                    'Conta Inexistente'
+                );
             }
         }else{
-            return 'valor precisa ser maior que 0';
+            throw new SaqueException(
+                'Valor inválido'
+            );
         }
     }
 
