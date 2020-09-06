@@ -102,6 +102,7 @@ return [
         'default' => [
             'query' => [
                 'contas' => App\GraphQL\Queries\ContasQuery::class,
+                'saldo'  =>  App\GraphQL\Queries\SaldoQuery::class,
             ],
             'mutation' => [
                 'sacar' => App\GraphQL\Mutation\SacarMutation::class,
