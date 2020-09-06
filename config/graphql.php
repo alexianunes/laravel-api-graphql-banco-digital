@@ -105,6 +105,7 @@ return [
             ],
             'mutation' => [
                 'sacar' => App\GraphQL\Mutation\SacarMutation::class,
+                'depositar' => App\GraphQL\Mutation\DepositarMutation::class,
             ],
             'middleware' => [],
             'method' => ['get', 'post'],

@@ -32,7 +32,7 @@ class ContaType extends GraphQLType
                 'description' => 'Conta da Conta Bancaria',
             ],
             'saldo' => [
-                'type' => Type::nonNull(Type::string()),
+                'type' => Type::nonNull(Type::float()),
                 'description' => 'Saldo da Conta Bancaria',
             ]
         ];
