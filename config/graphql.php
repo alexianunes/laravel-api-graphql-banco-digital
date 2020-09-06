@@ -104,7 +104,7 @@ return [
                 'contas' => App\GraphQL\Queries\ContasQuery::class,
             ],
             'mutation' => [
-                // 'example_mutation'  => ExampleMutation::class,
+                'sacar' => App\GraphQL\Mutation\SacarMutation::class,
             ],
             'middleware' => [],
             'method' => ['get', 'post'],
